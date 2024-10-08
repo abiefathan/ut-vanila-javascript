@@ -174,17 +174,17 @@
                 .then(result => {
                     console.log('Success:', result.payload.datas);
                     console.log('Success:', result.payload.datas);
-                    // Assuming result.payload.datas is an array of products
+                  
                     const products = result.payload.datas;
 
-                    // Find the select element
+                 
                     const $productSelect = $('#product');
 
-                    // Clear existing options (if needed)
+                   
                     $productSelect.empty();
-                    $productSelect.append('<option value="">-Pilih Product-</option>'); // Add the default option
+                    $productSelect.append('<option value="">-Pilih Product-</option>'); 
 
-                    // Iterate over the products and append them to the select element
+                   
                     products.forEach(product => {
                         $productSelect.append(`<option value="${product.id_produk}">${product.nama_produk}</option>`);
                     });
@@ -204,17 +204,16 @@
                 .then(response => response.json())
                 .then(result => {
                     console.log('Success:', result.payload.datas);
-                    // Assuming result.payload.datas is an array of products
+                   
                     const selesData = result.payload.datas;
 
-                    // Find the select element
+                    
                     const $selesSelected = $('#seles');
 
-                    // Clear existing options (if needed)
                     $selesSelected.empty();
-                    $selesSelected.append('<option value="">-Pilih Seles-</option>'); // Add the default option
+                    $selesSelected.append('<option value="">-Pilih Seles-</option>'); 
 
-                    // Iterate over the products and append them to the select element
+                    
                     selesData.forEach(selesLoop => {
                         $selesSelected.append(`<option value="${selesLoop.id_seles}">${selesLoop.nama_seles}</option>`);
                     });
