@@ -18,7 +18,46 @@
                     <div class="btn btn-success " style="border-radius: 18px;">Kembali</div>
                 </div>
                 <div class="card-body">
-                   
+
+                    <h3>
+                        <strong>membuat table leeds baru</strong><br>
+                        CREATE TABLE leeds (
+                        id_leads INT AUTO_INCREMENT PRIMARY KEY,
+                        tanggal DATE NOT NULL,
+                        id_seles INT,
+                        id_product INT,
+                        no_wa VARCHAR(15),
+                        nama_lead VARCHAR(100),
+                        kota VARCHAR(100),
+                        id_user INT
+                        );
+
+                    </h3>
+                    <p>
+                        <strong>membuat isi table</strong>
+                        <br>
+                        INSERT INTO leeds (tanggal, id_seles, id_product, no_wa, nama_lead, kota, id_user) VALUES
+                        ('2024-10-08', 1, 101, '08123456789', 'John Doe', 'Jakarta', 1),
+                        ('2024-10-08', 2, 102, '08198765432', 'Jane Smith', 'Bandung', 2),
+                        ('2024-10-09', 1, 103, '08234567890', 'Michael Johnson', 'Surabaya', 1),
+                        ('2024-10-09', 3, 104, '08345678901', 'Emily Davis', 'Semarang', 3);
+
+                    </p>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="d-flex " id="data-tabel"
+        style="padding: 20px; width: 100%; height: 100vh; background-color: rgb(224, 231, 255);">
+        <div class="container h-100">
+            <div class="card h-50 shadow border border-primary">
+                <div class="card-header " style="height: 4rem;">
+                    <div class="btn btn-success " style="border-radius: 18px;">Kembali</div>
+                </div>
+                <div class="card-body">
+
                     <form id="myForm">
                         <div class="row d-flex mt-3">
                             <div class="col-4">
@@ -81,39 +120,39 @@
                 <div class="card-body">
                     <table class="table">
                         <thead>
-                          <tr>
-                            <th scope="col">No</th>
-                            <th scope="col">ID Input</th>
-                            <th scope="col">seles</th>
-                            <th scope="col">Produk</th>
-                            <th scope="col">Nama Leads</th>
-                            <th scope="col">No Wa</th>
-                            <th scope="col">Kota</th>
-                          </tr>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">ID Input</th>
+                                <th scope="col">seles</th>
+                                <th scope="col">Produk</th>
+                                <th scope="col">Nama Leads</th>
+                                <th scope="col">No Wa</th>
+                                <th scope="col">Kota</th>
+                            </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <th scope="row">1</th>
-                            <td>1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>08389345345</td>
-                            <td>bogor</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>2</td>
-                            <td>hansen</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>08389345345</td>
-                            <td>bogor</td>
-                          </tr>
-                          
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>08389345345</td>
+                                <td>bogor</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>2</td>
+                                <td>hansen</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>08389345345</td>
+                                <td>bogor</td>
+                            </tr>
+
                         </tbody>
-                      </table>
-                  
+                    </table>
+
                 </div>
             </div>
         </div>
